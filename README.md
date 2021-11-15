@@ -1,6 +1,6 @@
 # This project contains TELSA homepage clone. I have 2 repositories with the same name. The previous one had some issues in build therefore I have created a new one. Both repos have been kept in the account for future reference. 
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
