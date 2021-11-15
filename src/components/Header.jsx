@@ -9,83 +9,83 @@ const [hamburgerStatus, setHamburgerStatus] = useState(false);
 
   return (
     <Container>
-      <a>
+      <span>
         <img className="logo" src="/Images/logo.svg" alt="Logo" />
-      </a>
+      </span>
       <Menu>
-        <a href="#">Model S</a>
-        <a href="#">Model Y</a>
-        <a href="#">Model X</a>
-        <a href="#">Model 3</a>
-        <a href="#">Solar Panel</a>
-        <a href="#">Solar Roofs</a>
+       <span> Model S</span>
+       <span> Model Y</span>
+       <span> Model X</span>
+       <span> Model 3</span>
+       <span> Solar Panel</span>
+       <span> Solar Roofs</span>
       </Menu>
 
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Account</a>
+       <span> Shop</span>
+       <span> Account</span>
         <Hamburger  onClick={() => setHamburgerStatus(true)}/>
       </RightMenu>
       <HamburgerMenu show={hamburgerStatus}>
         <CloseMenuButton onClick={() => setHamburgerStatus(false)}/>
         <li>
-          <a href="">Model S</a>
+         <span> Model S</span>
         </li>
         <li>
-          <a href="">Model 3</a>
+         <span> Model 3</span>
         </li>
         <li>
-          <a href="">Model X</a>
+         <span> Model X</span>
         </li>
         <li>
-          <a href="">Model Y</a>
+         <span> Model Y</span>
         </li>
         <li>
-          <a href="">solar roof</a>
+         <span> solar roof</span>
         </li>
         <li>
-          <a href="">solar panels</a>
+         <span> solar panels</span>
         </li>
         <li>
-          <a href="">Existing Inventory</a>
+         <span> Existing Inventory</span>
         </li>
         <li>
-          <a href="">Used inventory</a>
+         <span> Used inventory</span>
         </li>
         <li>
-          <a href="">test drive</a>
+         <span> test drive</span>
         </li>
         <li>
-          <a href="">powerwall</a>
+         <span> powerwall</span>
         </li>
         <li>
-          <a href="">commercial energy</a>
+         <span> commercial energy</span>
         </li>
         <li>
-          <a href="">utilities</a>
+         <span> utilities</span>
         </li>
         <li>
-          <a href="">charging</a>
+         <span> charging</span>
         </li>
         <li>
-          <a href="">find us</a>
+         <span> find us</span>
         </li>
         <li>
-          <a href="">support</a>
+         <span> support</span>
         </li>
         <li>
-          <a href="">investor relations</a>
+         <span> investor relations</span>
         </li>
         <li>
-          <a href="">shop</a>
+         <span> shop</span>
         </li>
         <li>
-          <a href="">account</a>
+         <span> account</span>
         </li>
         <li>
-          <a href="">
-            more <p>></p>
-          </a>
+         <span> 
+            more <p>&gt;</p>
+          </span>
         </li>
       </HamburgerMenu>
     </Container>
@@ -119,7 +119,7 @@ const Menu = styled.div`
     display: none;
   }
 
-  a {
+  span {
     font-weight: 500;
     text-transform: capitalize;
     padding: 2px 8px;
@@ -129,15 +129,16 @@ const Menu = styled.div`
     transition: background 0.5s;
   }
 
-  a:hover {
+  span:hover {
     background-color: #dadee7;
+    cursor: pointer;
   }
 `;
 const RightMenu = styled.div`
   display: flex;
   align-items: center;
 
-  a {
+  span {
     font-weight: 500;
     text-transform: capitalize;
     padding: 2px 8px;
@@ -147,8 +148,9 @@ const RightMenu = styled.div`
     transition: background 0.5s;
   }
 
-  a:hover {
+  span:hover {
     background-color: #dadee7;
+    cursor: pointer;
   }
 
   @media (max-width: 805px) {
@@ -178,7 +180,7 @@ const HamburgerMenu = styled.div`
 li {
     text-align: left;
 
-    a {
+    span {
         cursor: pointer;
       }
   }
@@ -189,6 +191,7 @@ li {
     bottom: 4.5rem;
     right: 4rem;
     font-weight: 400;
+    cursor: pointer;
   }
   
 `;
