@@ -1,4 +1,4 @@
-# This project contains TELSA homepage clone. I have 2 repositories with the same name. The previous one had some issues in build therefore I have created a new one. Both repos have been kept in the account for future reference. 
+# This project contains TELSA homepage clone.
 
 ## Getting Started with Create React App
 
